@@ -15,6 +15,11 @@ window.addEventListener("mousemove", (e) => {
   mouse.y = e.clientY;
 });
 
+window.addEventListener("resize", () => {
+  mainStage.width = innerWidth;
+  mainStage.height = innerHeight;
+});
+
 class Hexagon {
   constructor(x, y) {
     this.x = x;
