@@ -23,7 +23,6 @@ window.addEventListener("resize", () => {
 class Hexagon {
   constructor(x, y) {
     this.x = x;
-    // x === 0 ? 40 : x * 100;
     this.y = y;
     this.size = 50;
     this.color = "rgba(50,50,50,.8)";
@@ -65,7 +64,6 @@ class Hexagon {
     let dx = mouse.x - this.x;
     let dy = mouse.y - this.y;
     let distance = Math.sqrt(dx * dx + dy * dy);
-    console.log(distance);
     if (distance < 50) {
       ctx3.lineWidth = 5;
       this.colorStroke = this.gradient;
